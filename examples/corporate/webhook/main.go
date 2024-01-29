@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/synaps-hub/synaps-sdk-go/pkg/corporate"
+	"github.com/synaps-io/synaps-go/pkg/corporate"
 )
 
 func handleEvent(payload corporate.WebhookPayload) {

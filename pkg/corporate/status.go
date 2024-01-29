@@ -1,6 +1,6 @@
 package corporate
 
-import "github.com/synaps-hub/synaps-sdk-go/pkg/common"
+import "github.com/synaps-io/synaps-go/pkg/common"
 
 type Status string
 

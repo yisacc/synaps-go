@@ -25,7 +25,7 @@ Individual SDK enables you to initiate sessions, retrieve session details, and o
 To use the Synaps Individual Go SDK, you can add it as a dependency in your project using `go get`:
 
 ```bash
-go get github.com/synaps-hub/synaps-sdk-go/pkg/individual
+go get github.com/synaps-io/synaps-go/pkg/individual
 ```
 
 ## Usage
@@ -33,13 +33,13 @@ go get github.com/synaps-hub/synaps-sdk-go/pkg/individual
 The SDK facilitates the initiation of sessions, tracking user KYC progress, retrieving verification results, and handling events through webhooks.
 This section provides an overview of the fundamental steps to integrate the SDK into your project and start leveraging its functionalities.
 
-> A complete example can be found in the [examples/individual/main.go](https://github.com/synaps-hub/synaps-sdk-go/blob/main/examples/individual/main.go) file within the repository.
+> A complete example can be found in the [examples/individual/main.go](https://github.com/synaps-io/synaps-go/blob/main/examples/individual/main.go) file within the repository.
 
 ### Import
 
 ```go
 import (
-	"github.com/synaps-hub/synaps-sdk-go/pkg/individual"
+	"github.com/synaps-io/synaps-go/pkg/individual"
 )
 ```
 
@@ -228,7 +228,7 @@ Corporate SDK enables you to initiate sessions, retrieve session details, and ob
 To use the Synaps corporate Go SDK, you can add it as a dependency in your project using `go get`:
 
 ```bash
-go get github.com/synaps-hub/synaps-sdk-go/pkg/corporate
+go get github.com/synaps-io/synaps-go/pkg/corporate
 ```
 
 ## Usage
@@ -236,13 +236,13 @@ go get github.com/synaps-hub/synaps-sdk-go/pkg/corporate
 The SDK facilitates the initiation of sessions, tracking user KYC progress, retrieving verification results, and handling events through **webhooks**.
 This section provides an overview of the fundamental steps to integrate the SDK into your project and start leveraging its functionalities.
 
-> A complete example can be found in the [examples/corporate/main.go](https://github.com/synaps-hub/synaps-sdk-go/blob/main/examples/corporate/main.go) file within the repository.
+> A complete example can be found in the [examples/corporate/main.go](https://github.com/synaps-io/synaps-go/blob/main/examples/corporate/main.go) file within the repository.
 
 ### Import
 
 ```go
 import (
-	"github.com/synaps-hub/synaps-sdk-go/pkg/corporate"
+	"github.com/synaps-io/synaps-go/pkg/corporate"
 )
 ```
 
@@ -428,7 +428,7 @@ Whether you using corporate or individual SDK, we provide webhooks, which are tr
 
 In order to receive webhooks, you'll need to create an endpoint that can receive and handle the webhook events. Below is an example, for individual SDK, of how to set up the necessary components.
 
-> You can find the complete example in the [examples/individual/webhook/main.go](https://github.com/synaps-hub/synaps-sdk-go/blob/main/examples/individual/webhook/main.go) or [examples/corporate/webhook/main.go](https://github.com/synaps-hub/synaps-sdk-go/blob/main/examples/corporate/webhook/main.go) file within the repository.
+> You can find the complete example in the [examples/individual/webhook/main.go](https://github.com/synaps-io/synaps-go/blob/main/examples/individual/webhook/main.go) or [examples/corporate/webhook/main.go](https://github.com/synaps-io/synaps-go/blob/main/examples/corporate/webhook/main.go) file within the repository.
 
 ## Import
 ```go
@@ -439,7 +439,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/synaps-hub/synaps-sdk-go/pkg/individual" // Or "github.com/synaps-hub/synaps-sdk-go/pkg/corporate"
+	"github.com/synaps-io/synaps-go/pkg/individual" // Or "github.com/synaps-io/synaps-go/pkg/corporate"
 )
 ```
 
@@ -516,7 +516,7 @@ Once done, add your endpoint URL to Synaps [manager](https://manager-kyc.synaps.
 Congratulations, you're now all set!
 
 Be sure not to overlook theses steps to ensure security:
-- Verifying that the secret in the query parameters is matching the one given to you on the manager. This step ensures that you are exclusively receiving events from Synaps, as shown in the [individual example](https://github.com/synaps-hub/synaps-sdk-go/blob/main/examples/individual/webhook/main.go#L37) or [corporate example](https://github.com/synaps-hub/synaps-sdk-go/blob/main/examples/corporate/webhook/main.go#L37).
+- Verifying that the secret in the query parameters is matching the one given to you on the manager. This step ensures that you are exclusively receiving events from Synaps, as shown in the [individual example](https://github.com/synaps-io/synaps-go/blob/main/examples/individual/webhook/main.go#L37) or [corporate example](https://github.com/synaps-io/synaps-go/blob/main/examples/corporate/webhook/main.go#L37).
 - Utilizing HTTPS to establish a secure communication channel. This practice ensures the confidentiality and integrity of the data being exchanged.
 
 

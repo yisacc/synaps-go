@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/synaps-hub/synaps-sdk-go/pkg/common"
+	"github.com/synaps-io/synaps-go/pkg/common"
 )
 
 type (
