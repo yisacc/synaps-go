@@ -3,7 +3,7 @@ package individual
 import (
 	"fmt"
 
-	"github.com/synaps-hub/synaps-sdk-go/pkg/common"
+	"github.com/synaps-io/synaps-go/pkg/common"
 )
 
 // Get session details from sessionID
