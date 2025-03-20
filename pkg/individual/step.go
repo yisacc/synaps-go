@@ -30,10 +30,16 @@ const (
 	RestrictedNationalityTypeReason    ReasonCode = "RESTRICTED_NATIONALITY_TYPE"
 )
 
+// Step message object.
+type StepMessage struct {
+	Original   string `json:"original"`
+	Translated string `json:"translated"`
+}
+
 // Step rejection reason
 type StepReason struct {
-	Code    ReasonCode
-	Message string
+	Code    ReasonCode  `json:"code"`
+	Message StepMessage `json:"message"`
 }
 
 type IDDocumentType string
