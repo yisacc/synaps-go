@@ -1,4 +1,4 @@
-module github.com/synaps-io/synaps-go
+module github.com/yisacc/synaps-go
 
 go 1.18
 

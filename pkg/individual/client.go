@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/synaps-io/synaps-go/pkg/common"
+	"github.com/yisacc/synaps-go/pkg/common"
 )
 
 const DefaultBaseURL = "https://api.synaps.io/v4"

@@ -1,6 +1,6 @@
 package individual
 
-import "github.com/synaps-io/synaps-go/pkg/common"
+import "github.com/yisacc/synaps-go/pkg/common"
 
 type Status string
 
